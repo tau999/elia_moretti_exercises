@@ -1,0 +1,23 @@
+0.8
+108
+1.1
+2.2
+0.0005
+100
+5000
+1000
+1
+1
+15
+
+	ReadInput >> temp;
+  ReadInput >> npart;
+  ReadInput >> rho;
+  ReadInput >> rcut;
+  ReadInput >> delta;
+	ReadInput >> nblk;
+  ReadInput >> nstep;
+  ReadInput >> iprint;
+	ReadInput >> rescale_position;
+	ReadInput >> start_old;
+	ReadInput >> equilibration_time;
