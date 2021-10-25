@@ -20,6 +20,7 @@ using namespace std;
 int main()
 { 
   Input(); //Inizialization
+	Equilibration();
   for(int iblk=1; iblk <= nblk; ++iblk) //Simulation
   {
     Reset(iblk);   //Reset block averages
@@ -82,6 +83,8 @@ void Input(void)
   ReadInput >> nstep;
 
 	ReadInput >> oldconfig; // if=1 start from old config
+	
+	ReadInput >> equilibration_time;
 
 	
   if(metro==1) cout << "The program perform Metropolis moves" << endl;
@@ -138,6 +141,12 @@ remove( "output.heat.0");
 
 }
 
+void Equilibration(){
+
+	for (int i =0; i <equilibration_time; i+=1)
+		Move(metro);
+
+}
 
 void Move(int metro)
 {

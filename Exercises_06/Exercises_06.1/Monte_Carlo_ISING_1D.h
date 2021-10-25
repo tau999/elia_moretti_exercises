@@ -37,7 +37,7 @@ int nspin, oldconfig;
 double beta,temp,J,h;
 
 // simulation
-int nstep, nblk, metro;
+int nstep, nblk, metro, equilibration_time;
 
 //functions
 void Input(void);
@@ -50,6 +50,7 @@ void Measure(void);
 double Boltzmann(int, int);
 int Pbc(int);
 double Error(double,double,int);
+void Equilibration(void);
 
 #endif
 
