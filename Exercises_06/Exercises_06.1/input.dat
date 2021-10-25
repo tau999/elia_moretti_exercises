@@ -6,15 +6,4 @@
 200
 1000
 1
-200
-
-
-  ReadInput >> temp;
-  ReadInput >> nspin;
-  ReadInput >> J;
-  ReadInput >> h;
-  ReadInput >> metro
-  ReadInput >> nblk;
-  ReadInput >> nstep;
-	ReadInput >> oldconfig;
-	ReadInput >> equilibration_time;
+2000

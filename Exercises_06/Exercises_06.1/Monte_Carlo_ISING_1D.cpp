@@ -143,6 +143,11 @@ remove( "output.heat.0");
 
 void Equilibration(){
 
+
+	cout << "----------------------------" << endl << endl;
+ 	cout << "Equilibration time:"<< equilibration_time <<endl<<endl;
+ 	cout << "----------------------------" << endl << endl;
+
 	for (int i =0; i <equilibration_time; i+=1)
 		Move(metro);
 
